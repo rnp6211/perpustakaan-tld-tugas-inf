@@ -1,19 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>Kontak</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Perpustakaan</title>
 </head>
 <body>
+    <img src="image/Logo Teladan.png" alt="Logo Teladan" style="width: 4em; height: 4em;" >
+    <h1 style="display: inline-block; vertical-align: top;">Perpustakaan SMAN 1 Teladan Yogyakarta</h1>
+    
+    <h2>Halaman Web</h2>
+    <ul>
+        <li><a href="indeks.html">Beranda</a></li>
+        <li><a href="buku.html">Daftar Buku</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+    </ul>
+
     <h2>Kontak</h2>
     <form>
-        Nama : <input type="text" name="nama" size="20px">
+        <label for="nama" style="display: inline-block; vertical-align: top;">Nama :</label>
+        <input type="text" name="nama" size="20px">
         <br>
-        <br>
-        <br>
-        <label for="pertanyaan">Pertanyaan :</label><br>
+        <label for="pertanyaan" style="display: inline-block; vertical-align: top;">Pertanyaan :</label><br>
         <textarea id="pesan" name="pesan" rows="4" cols="30"></textarea>
         <br>
-        <input type="button" name="submit" value="submit">
+        <br>
+        <input type="button" name="submit" value="Submit">
     </form>
 </body>
 </html>
