@@ -4,79 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daftar Buku Perpustakaan</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <img src="image/Logo Teladan.png" alt="Logo Teladan" style="width: 4em; height: 4em;">
-    <h1 style="display: inline-block; vertical-align: top;">Perpustakaan SMAN 1 Teladan Yogyakarta</h1>
-        
-    <hr/>
+    <header>
+        <img src="image/Logo Teladan.png" alt="Logo Teladan">
+        <h1>Perpustakaan SMAN 1 Teladan Yogyakarta</h1>
+    </header>
+    
+    <nav>
+        <h2>Halaman Web</h2>
+        <ul>
+            <li><a href="indeks.html">Beranda</a></li>
+            <li><a href="buku.html">Daftar Buku</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+    </nav>
 
-    <h2>Halaman Web</h2>
-    <ul>
-        <li><a href="indeks.html">Beranda</a></li>
-        <li><a href="buku.html">Daftar Buku</a></li>
-        <li><a href="kontak.html">Kontak</a></li>
-    </ul>
-
-    <hr/>
-
-    <h2>Daftar Buku</h2>
+    <main>
+        <h2>Daftar Buku</h2>
     <table class="table">
         <style>
-            table.table {
-                width: 100%;
+            .table th, .table td {
                 text-align: center;
-                border-collapse: collapse;
-                margin: 20px 0;
-            }
-            table.table, th, td {
-                border: 1px solid black;
-                padding: 8px;
-            }
-            td {
-                vertical-align: middle;
             }
             tr > td > img {
                 width: 15em;
-                display: block;
-                margin: 0 auto;
             }
         </style>
-
-        <tr style="font-weight: bold;">
-            <th style="width: 1em;">No</th>
+        <tr>
+            <th>No</th>
             <th>Cover</th>
             <th>Judul</th>
             <th>Penulis</th>
-            <th style="width: 1em;">Status</th>
+            <th>Status</th>
         </tr>
         <tr>
             <td>1</td>
             <td><img src="image/pbd.jpg" alt="Pale Blue Dot"></td>
             <td>Pale Blue Dot</td>
             <td>Carl Sagan</td>
-            <td>Tersedia</td>
+            <td class="status-tersedia">Tersedia</td>
         </tr>
         <tr>
             <td>2</td>
             <td><img src="image/cosmos.jpg" alt="Cosmos"></td>
             <td>Cosmos</td>
             <td>Carl Sagan</td>
-            <td>Dipinjam</td>
+            <td class="status-dipinjam">Dipinjam</td>
         </tr>
         <tr>
             <td>3</td>
             <td><img src="image/narnia.jpg" alt="The Chronicles of Narnia"></td>
             <td>The Chronicles of Narnia</td>
             <td>C.S. Lewis</td>
-            <td>Dipinjam</td>
+            <td class="status-dipinjam">Dipinjam</td>
         </tr>
         <tr>
             <td>4</td>
             <td><img src="image/kusuriya.jpg" alt="The Apothecary Diaries: Volume 1"></td>
             <td>The Apothecary Diaries: Volume 1</td>
             <td>Natsu Hyuga</td>
-            <td>Tersedia</td>
+            <td class="status-tersedia">Tersedia</td>
         </tr>
     </table>
 </body>
