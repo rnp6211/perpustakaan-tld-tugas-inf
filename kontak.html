@@ -6,23 +6,36 @@
     <title>Kontak Perpustakaan</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body style="background-image: url('image/foto teladan infor.jpeg');">
     <header>
         <img src="image/Logo Teladan.png" alt="Logo Teladan">
         <h1>Perpustakaan SMAN 1 Teladan Yogyakarta</h1>
     </header>
+
+    <style>
+        .box{
+
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+        }
+    </style>
     
-    <nav>
-        <h2>Halaman Web</h2>
-        <ul>
-            <li><a href="indeks.html">Beranda</a></li>
-            <li><a href="buku.html">Daftar Buku</a></li>
-            <li><a href="kontak.html">Kontak</a></li>
-        </ul>
+    <nav class="box" style="padding-left: 1em;">
+        <div>
+            <h2>Halaman Web</h2>
+            <ul>
+                <li><a href="indeks.html">Beranda</a></li>
+                <li><a href="buku.html">Daftar Buku</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </div>
     </nav>
 
     <main>
-        <h2>Kontak</h2>
+        <h2 class="box" style="padding-left: 0.5em;">Kontak</h2>
         <form>
             <label for="nama">Nama:</label>
             <input type="text" id="nama" name="nama" required>
